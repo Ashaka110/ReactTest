@@ -12,13 +12,13 @@ const head = () => {
             <NavLink to='/Editor' className="white-text" id="MyQuizes">My Quizes</NavLink>
           </li>
           <li className="logged-in">
-            <a href="#" className="white-text" id="logout">Logout</a>
+            <a href="/" className="white-text" id="logout">Logout</a>
           </li>
           <li className="logged-out">
-            <a href="#" className="white-text modal-trigger" data-target="modal-login">Login</a>
+            <a href="/" className="white-text modal-trigger" data-target="modal-login">Login</a>
           </li>
           <li className="logged-out">
-            <a href="#" className="white-text modal-trigger" data-target="modal-signup">Sign up</a>
+            <a href="/" className="white-text modal-trigger" data-target="modal-signup">Sign up</a>
           </li>
       </ul>
     </div>

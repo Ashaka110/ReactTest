@@ -10,7 +10,7 @@ function EditorPage(props){
         console.log("Effect");
         const M = window.M;
             var elems = document.querySelectorAll('select');
-            var instances = M.FormSelect.init(elems, {});
+            M.FormSelect.init(elems, {});
     }, [] )
 
 

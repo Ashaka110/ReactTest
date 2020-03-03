@@ -1,7 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import firebase from '../firebase'
-
-import QuizCreateForm from './QuizCreateForm'
 import QuizItem from './QuizItem'
 
 

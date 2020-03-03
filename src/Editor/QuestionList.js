@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import QuestionItem from './QuestionItem'
 
 function QuestionList(props){
@@ -14,7 +14,7 @@ function QuestionList(props){
                     </div>
                 )}
             </ol>
-            <a onClick={(e) => props.AddQuestion()} className="btn">Add Question</a>
+            <button onClick={(e) => props.AddQuestion()} className="btn">Add Question</button>
         </div>
     )    
 

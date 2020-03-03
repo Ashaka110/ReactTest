@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import firebase from '../firebase'
-import QuizList from '../QuizList/QuizList'
 import QuestionList from './QuestionList'
 import QuestionForm from './QuestionForm'
 
@@ -20,10 +19,10 @@ function QuizEditor(props){
             setDoc(doc);
             setQuestions (doc.data().Questions);
         })
-    },[])
+    },[props.match.params.id])
 
     const addQuestion= () => {
-        setQuestions([... Questions, {
+        setQuestions([...Questions, {
             Question: '', A: '', B: '', C: '', D: '', Aans: false, Bans: false, Cans: false, Dans: false
         } ])
     }
@@ -48,7 +47,7 @@ function QuizEditor(props){
         setQuestions(q);
         console.log(q);
         setQuestNum(QuestNum);
-        setRand(Math.random());
+        setRand(Math.random() + rand);
     }
 
     const save = () => {
@@ -56,7 +55,7 @@ function QuizEditor(props){
             Questions
         })
     }
-    if(Questions.length == 0){
+    if(Questions.length === 0){
         return <div> Loading...</div>
     }
 
