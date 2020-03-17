@@ -38,7 +38,11 @@ function QuizEditor(props){
     }
 
     const swapQuestions = (A, B) => {
+        if(A < 0){
 
+        }
+
+        setRand(Math.random() + rand);
     }
 
     const updateQuestion = (id, value) => {

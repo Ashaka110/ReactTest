@@ -16,6 +16,7 @@ const QuizItem = (props) => {
                     <p>Questions: 0</p>
                 </div>
                 <div className="right-align">
+                    <Link to={"Play/" + props.doc.id} className="btn">Run</Link>
                     <Link to={"Editor/" + props.doc.id} className="btn">Edit</Link>
                     <button className="btn" onClick={(e) => Delete(props.doc.id)}>Delete</button>
                 </div>

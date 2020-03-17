@@ -15,10 +15,10 @@ const head = () => {
             <a href="/" className="white-text" id="logout">Logout</a>
           </li>
           <li className="logged-out">
-            <a href="/" className="white-text modal-trigger" data-target="modal-login">Login</a>
+            <a href="/login" className="white-text modal-trigger" data-target="modal-login">Login</a>
           </li>
           <li className="logged-out">
-            <a href="/" className="white-text modal-trigger" data-target="modal-signup">Sign up</a>
+            <a href="/signup" className="white-text modal-trigger" data-target="modal-signup">Sign up</a>
           </li>
       </ul>
     </div>
